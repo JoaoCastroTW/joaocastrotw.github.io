@@ -80,12 +80,19 @@ html {
     margin: auto;
     margin-top: 3.8rem;
     margin-bottom: 5.9rem;
+    margin-bottom: 3.8rem;
+    opacity: 0;
+
+    animation: opacity 2s ease, drop 2s ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 #presentation-icons img {
     width: 5.3rem;
     margin-left: 2.65rem;
     margin-right: 2.65rem;
+    mix-blend-mode: multiply;
 
     transition: opacity .2s ease-out;
     -moz-transition: opacity .2s ease-out;
@@ -103,6 +110,8 @@ html {
     font-size: 14rem;
     text-align: center;
     color: white;
+
+    animation: opacity 2s ease, drop 2s ease;
 }
 
 #home h2{
@@ -111,6 +120,11 @@ html {
     font-size: 6rem;
     text-align: center;
     color: white;
+    opacity: 0;
+
+    animation: opacity 2s ease, drop 2s ease;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 #home p{
@@ -122,6 +136,11 @@ html {
     font-size: 2.5rem;
     text-align: left;
     color: white;
+    opacity: 0;
+
+    animation: opacity 3s ease;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
 }
 
 .page {
@@ -425,5 +444,25 @@ html {
         max-width: 23rem;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-8vw);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }
