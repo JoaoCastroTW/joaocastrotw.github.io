@@ -459,7 +459,7 @@ html {
 
 @keyframes drop {
     0% {
-        transform: translateY(-8vw);
+        transform: translateY(-40px);
     }
 
     100% {
