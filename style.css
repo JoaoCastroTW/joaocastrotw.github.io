@@ -33,6 +33,7 @@ html {
 #navicons {
     display: flex;
     justify-content: space-between;
+    
 }
 
 #navbar a {
@@ -46,6 +47,9 @@ html {
     -moz-transition: opacity .2s ease-out;
     -webkit-transition: opacity .2s ease-out;
     -o-transition: opacity .2s ease-out;
+    
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 #navbar img:hover {
@@ -209,6 +213,7 @@ html {
 .gallery {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: auto;
@@ -220,8 +225,17 @@ html {
 
 .gallery img {
     max-width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rectangle {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 0.2rem;
+    width: 100rem;
+    background-color: #555;
 }
 
 @media (max-width: 1024px) {
