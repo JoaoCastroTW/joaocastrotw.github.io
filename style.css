@@ -84,8 +84,8 @@ html {
     margin-bottom: 3.8rem;
     opacity: 0;
 
-    animation: opacity 2s ease;
-    animation-delay: 0.75s;
+    animation: opacity 2s ease, drop 2s ease;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -114,7 +114,7 @@ html {
     color: white;
     opacity: 0;
 
-    animation: opacity 2s ease;
+    animation: opacity 2s ease, drop 2s ease;
     animation-fill-mode: forwards;
 }
 
@@ -125,8 +125,8 @@ html {
     color: white;
     opacity: 0;
 
-    animation: opacity 2s ease;
-    animation-delay: 0.25s;
+    animation: opacity 2s ease, drop 2s ease;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -141,8 +141,8 @@ html {
     color: white;
     opacity: 0;
 
-    animation: opacity 2s ease;
-    animation-delay: 1s;
+    animation: opacity 3s ease;
+    animation-delay: 1.5s;
     animation-fill-mode: forwards;
 }
 
