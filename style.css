@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium';
 }
 
 html {
@@ -18,10 +19,10 @@ html {
     height: 6.9rem;
     width: 100%;
     max-width: 100%;
+    z-index: 999;
 }
 
 #navhome {
-    font-family: 'Franklin Gothic Medium';
     font-weight: normal;
     font-size: 3rem;
     text-align: left;
@@ -83,8 +84,8 @@ html {
     margin-bottom: 3.8rem;
     opacity: 0;
 
-    animation: opacity 2s ease, drop 2s ease;
-    animation-delay: 1s;
+    animation: opacity 2s ease;
+    animation-delay: 0.75s;
     animation-fill-mode: forwards;
 }
 
@@ -93,6 +94,8 @@ html {
     margin-left: 2.65rem;
     margin-right: 2.65rem;
     mix-blend-mode: multiply;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 
     transition: opacity .2s ease-out;
     -moz-transition: opacity .2s ease-out;
@@ -105,30 +108,30 @@ html {
 }
 
 #home h1 {
-    font-family: 'Franklin Gothic Medium';
     font-weight: normal;
     font-size: 14rem;
     text-align: center;
     color: white;
+    opacity: 0;
 
-    animation: opacity 2s ease, drop 2s ease;
+    animation: opacity 2s ease;
+    animation-fill-mode: forwards;
 }
 
 #home h2{
-    font-family: 'Franklin Gothic Medium';
     font-weight: normal;
     font-size: 6rem;
     text-align: center;
     color: white;
     opacity: 0;
 
-    animation: opacity 2s ease, drop 2s ease;
-    animation-delay: 0.5s;
+    animation: opacity 2s ease;
+    animation-delay: 0.25s;
     animation-fill-mode: forwards;
 }
 
 #home p{
-    font-family: 'Franklin Gothic Medium';
+    
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -138,8 +141,8 @@ html {
     color: white;
     opacity: 0;
 
-    animation: opacity 3s ease;
-    animation-delay: 1.5s;
+    animation: opacity 2s ease;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -155,29 +158,27 @@ html {
 }
 
 .page h1 {
-    font-family: 'Franklin Gothic Medium';
     font-weight: normal;
     font-size: 7rem;
     text-align: center;
-    color: black;
+    color: #3a3a3a;
     margin-top: 5.5rem;
 }
 
 .page h2 {
-    font-family: 'Franklin Gothic Medium';
     font-weight: normal;
     font-size: 3.5rem;
     text-align: center;
-    color: black;
+    color: #3a3a3a;
     margin-bottom: 5.3rem;
 }
 
 .page p {
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Noto Sans', sans-serif;
     font-weight: normal;
-    font-size: 2rem;
+    font-size: 1.7rem;
     text-align: left;
-    color: black;
+    color: #3a3a3a;
     padding-left: 1rem;
     padding-right: 1rem;
 }

@@ -5,6 +5,12 @@
         <title>João Castro | Game Designer</title>
         <link rel="icon" href="/images/icon.png">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,400;0,900;1,100;1,400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="robots" content="noindex, nofollow">
         <meta name="description" content="João Castro">
@@ -35,6 +41,32 @@
                     </div>
 
                     <p>Hello! My name is João Castro. I’m a game designer with 4+ years of professional experience, currently crafting experiences for thousands of players in the biggest Minecraft network of Brazil. Scrolling below you can see some examples of how i go about designing systems and solving problems. I hope you like it!</p>
+                </div>
+            </section>
+            
+            <section class="page">
+                <div class="article">
+                    <h1>Chance of Return</h1>
+                    <h2>Raid mechanic</h2>
+
+                    <div class="article-content">
+                        <div class="text">
+                            <p>
+                                <br>We were facing two big problems in our Factions servers. The first problem was that the Factions would most likely quit after being raided. The second problem was that some Factions would just explode their own base, just to not let their opponents grab their items.
+                                <br>
+                                <br>To give context: the most valuable items in the server were blocks that spawned monsters. You could steal those blocks from other Factions by raiding them, and exploding those blocks. When one of this blocks got exploded, there was a 60% chance of it dropping, and a 40% chance of it just disappearing (this acted as a money sink). If you destroyed your own Mob Spawning block, it would always disappear.
+                                <br>
+                                <br>We considered implementing a insurance system for the players to get back their spawners in case they were raided, but didn't end up using it. Since it would be possible to opt out of the system, some players cerainly would just lose their blocks in raids, and be frustrated for not having saved some money or activated the insurance.
+                                <br>
+                                <br>Eventually we came up with a great solution that solved both problems. Now, when a block is exploded by an opponent, it has a 55% chance of dropping, a 20% chance of disappearing, and a <b>25% chance of returning</b> to it's original owners. This made so that it wasn't worth it to explode your own items anymore, since by doing it they would always disappear. This also made it almost impossible for players to lose all of their blocks in a raid, making them more likely to keep playing the game.
+                            </p>
+                        </div>
+
+                        <div class="gallery">
+                            <img src="/images/image.png">
+                            <img src="/images/image.png">
+                        </div>
+                    </div>
                 </div>
             </section>
 
