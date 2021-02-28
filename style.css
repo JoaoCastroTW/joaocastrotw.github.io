@@ -1,10 +1,8 @@
-@font-face { font-family: 'Franklin Gothic Medium'; src: url('/fonts/franklin-gothic-medium.ttf');}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium';
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 html {
